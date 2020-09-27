@@ -35,7 +35,9 @@ menu_item4 = MenuItem.new(restaurant1, recipe_2, 9.95)
 menu_item5 = MenuItem.new(restaurant2, recipe_3, 8.49)
 menu_item6 = MenuItem.new(restaurant3, recipe_1, 7.95)
 
+##### BUYER #####
 
+buyer1 = "Elias"
 
 ### Initializers, Readers, and Writers
 # - For these, the initialize is described as well was what attribute can(not) be changed after initialization. Use those descriptions to determine the appropriate readers and writers.

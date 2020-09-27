@@ -19,7 +19,10 @@ class RestaurantOwner
         restaurants.map { |restaurant| restaurant.menu_items }
     end
 
-    def sell_restaurant(restaurant, buyer)
-        
+    def self.average_age
+        all.reduce(0){ |total, owner| total + (owner.age / all.count) }
     end
+
+    # def sell_restaurant(restaurant, buyer)
+    # end
 end
