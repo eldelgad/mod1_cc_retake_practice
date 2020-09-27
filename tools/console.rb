@@ -6,13 +6,36 @@ def reload
   load 'config/environment.rb'
 end
 
-#### RECIPE ####
 
-#### MENU ITEM ####
+#### RESTAURANT OWNER ####
+
+owner1 = RestaurantOwner.new("Rafiki", 52)
+owner2 = RestaurantOwner.new("Alex", 47)
+owner3 = RestaurantOwner.new("Mariano", 39)
 
 #### RESTATURANT ####
 
-#### RESTAURANT OWNER ####
+restaurant1 = Restaurant.new(owner1, "Pollo Loco", 3)
+restaurant2 = Restaurant.new(owner2, "Sweets & Treats", 4)
+restaurant3 = Restaurant.new(owner3, "Mac & Snack", 5)
+
+#### RECIPE ####
+
+recipe_1 = Recipe.new("Chicken", "Salt, Pepper, Chicken")
+recipe_2 = Recipe.new("Choclate Cake", "Choclate, Flour, Eggs")
+recipe_3 = Recipe.new("Mac and Cheese", "Maccaroni, Cheese, Milk")
+recipe_4 = Recipe.new("BLT", "Bacon, Lettuce, Tomatoes, Bread")
+
+#### MENU ITEM ####
+
+menu_item1 = MenuItem.new(restaurant1, recipe_1, 12.95)
+menu_item2 = MenuItem.new(restaurant2, recipe_2, 11.95)
+menu_item3 = MenuItem.new(restaurant3, recipe_3, 10.49)
+menu_item4 = MenuItem.new(restaurant1, recipe_2, 9.95)
+menu_item5 = MenuItem.new(restaurant2, recipe_3, 8.49)
+menu_item6 = MenuItem.new(restaurant3, recipe_1, 7.95)
+
+
 
 ### Initializers, Readers, and Writers
 # - For these, the initialize is described as well was what attribute can(not) be changed after initialization. Use those descriptions to determine the appropriate readers and writers.

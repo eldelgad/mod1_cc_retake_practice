@@ -11,4 +11,8 @@ class MenuItem
     def self.all
         @@all
     end
+
+    def owner
+        Restaurant.all.find { |restaurant| restaurant.owner }
+    end
 end
